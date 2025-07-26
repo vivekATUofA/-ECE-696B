@@ -43,4 +43,14 @@ public class CartLineItem {
 		return new CartLineItem(product, amount);
 	}
 
+	public CartLineItem withQuantity(int quantity) {
+		this.quantity = quantity;
+		return this;
+	}
+
+	public CartLineItem withProduct(Product product) {
+		this.product = product;
+		return this;
+	}
+
 }

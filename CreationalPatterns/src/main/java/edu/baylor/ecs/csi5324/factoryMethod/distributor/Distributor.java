@@ -39,8 +39,7 @@ public abstract class Distributor {
 	 * 
 	 */
 	protected void shipTracing(String name, Cart cart) throws Exception {
-		// TODO replace with Logger!
-		System.out.println(name + " ships (" + cart.getTotal() + ") for charge " + getCharge() + " track at "
-				+ getTrackingLink().toString());
+		logger.info(() -> name + " ships (" + cart.getTotal() + ") for charge " + getCharge() + " track at " + getTrackingLink());
+
 	}
 }
